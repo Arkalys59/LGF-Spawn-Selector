@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Spawn Selector</title>
+</head>
+<body>
+    <div class="spawn-container">
+        <div class="spawn-selector">
+            <div class="time-container" id="currentTime">
+                <i class="fas fa-clock"></i> <span id="currentClock"></span>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchSpawnInput" placeholder="Search spawn points...">
+            </div>
+            <h2 id="serverTitle"></h2>
+            <div class="spawn-options"></div>
+            <div class="button-container">
+                <button id="selectButton"><i class="fas fa-check-circle"></i> Select Spawn</button>
+                <button id="lastCoordsButton"><i class="fas fa-map-marker-alt"></i> Last Coords</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="custom-notification" id="customNotification">
+        <i class="fas fa-exclamation-triangle"></i> <p id="notificationMessage"></p>
+    </div>
+
+    <div class="custom-alert" id="customAlert">
+        <div class="alert-content">
+            <p id="alertMessage"></p>
+            <div class="alert-buttons">
+                <button id="confirmButton"><i class="fas fa-check"></i> Confirm</button>
+                <button id="cancelButton"><i class="fas fa-times"></i> Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
